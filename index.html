@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conteúdo que Atrai — Edição Premium | PERSONAL.PRO</title>
+<meta name="description" content="300 ganchos, 60 roteiros completos para Reels, 100 prompts visuais e um calendário editorial de 30 dias para personal trainers transformarem conhecimento técnico em conteúdo que atrai alunos.">
+<meta name="theme-color" content="#08080a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Conteúdo que Atrai — Edição Premium | PERSONAL.PRO">
+<meta property="og:description" content="Pare de perder horas pensando no que postar. 300 ganchos, 60 roteiros, 100 prompts visuais e calendário de 30 dias para personal trainers.">
+<meta property="og:image" content="https://jonatastreinador.github.io/conteudo-que-atrai/assets/og.jpg">
+<link rel="icon" href="assets/logo.webp">
+<meta property="og:url" content="https://jonatastreinador.github.io/conteudo-que-atrai/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/vsl-poster.jpg">
+<style>
+:root{
+  --bg:#08080a; --bg2:#0e0e11; --card:#121216; --line:#24252b; --line2:#33353c;
+  --text:#ecedf0; --muted:#9a9ea7; --dim:#6d7079;
+  --silver:linear-gradient(180deg,#ffffff 0%,#d4d7dc 45%,#8f949b 100%);
+  --silver-h:linear-gradient(100deg,#9ea3aa 0%,#ffffff 45%,#c9ccd1 60%,#8f949b 100%);
+  --r:18px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.streaks{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+   linear-gradient(115deg,transparent 0 30%,rgba(255,255,255,.035) 30.2%,transparent 30.6%),
+   linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.05) 58.15%,transparent 58.5%),
+   linear-gradient(115deg,transparent 0 79%,rgba(255,255,255,.025) 79.2%,transparent 79.6%),
+   radial-gradient(ellipse 80% 50% at 50% 0%,rgba(255,255,255,.06),transparent 70%)}
+main,header,footer{position:relative;z-index:1}
+.metal{background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:900}
+h2{font-size:clamp(2rem,4.6vw,3.2rem)}
+.hl{background:#fff;color:#08080a;padding:0 .18em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+section{padding:96px 0}
+.center{text-align:center}
+.lead{color:var(--muted);font-size:1.08rem;max-width:680px}
+.center .lead{margin-left:auto;margin-right:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.01em;
+  background:#fff;color:#08080a;border-radius:999px;padding:20px 34px;font-size:1.08rem;border:0;cursor:pointer;
+  box-shadow:0 0 0 1px rgba(255,255,255,.2),0 14px 40px -10px rgba(255,255,255,.35);transition:transform .15s ease,box-shadow .2s ease;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(255,255,255,.4),0 20px 50px -10px rgba(255,255,255,.45)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(0,0,0,.08) 45%,rgba(255,255,255,.9) 50%,transparent 60%);transform:translateX(-120%);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1.5px var(--line2)}
+.btn-ghost::after{display:none}
+.micro{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-top:16px;font-size:.86rem;color:var(--muted)}
+.micro span{display:inline-flex;align-items:center;gap:7px}
+.hero-micro{justify-content:flex-start}
+.micro svg{width:15px;height:15px;opacity:.8}
+
+/* top bar */
+header{position:sticky;top:0;z-index:30;background:rgba(8,8,10,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+header img{height:38px;width:auto}
+header .btn{padding:11px 20px;font-size:.88rem}
+header .btn::after{display:none}
+
+/* hero */
+.hero{padding:56px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.1rem);margin:18px 0 22px}
+.hero .lead{font-size:1.15rem;margin-bottom:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.chip{border:1px solid var(--line2);border-radius:999px;padding:8px 14px;font-size:.88rem;font-weight:600;color:#d7d9dd;background:rgba(255,255,255,.02)}
+.chip b{font-weight:900;color:#fff}
+.vsl{position:relative;margin:0 auto;width:min(100%,380px);aspect-ratio:9/16;border-radius:34px;padding:9px;background:linear-gradient(160deg,#5a5d64,#1b1c20 30%,#0c0c0e 70%,#45484e);box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08),0 0 80px -20px rgba(255,255,255,.12)}
+.vsl video{width:100%;height:100%;object-fit:cover;border-radius:26px;background:#000}
+.vsl .sound{position:absolute;inset:9px;border-radius:26px;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  background:radial-gradient(circle at 50% 50%,rgba(0,0,0,.35),rgba(0,0,0,.6));color:#fff;font:inherit}
+.vsl .sound .ring{width:92px;height:92px;border-radius:50%;background:#fff;color:#08080a;display:grid;place-items:center;box-shadow:0 0 0 0 rgba(255,255,255,.5);animation:pulse 1.8s ease-out infinite}
+.vsl .sound .ring svg{width:40px;height:40px}
+.vsl .sound strong{font-size:1.05rem;font-weight:900;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.vsl .sound small{font-size:.82rem;color:#d4d6da;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.45)}100%{box-shadow:0 0 0 26px rgba(255,255,255,0)}}
+.vsl .bar{position:absolute;left:24px;right:24px;bottom:22px;height:4px;border-radius:4px;background:rgba(255,255,255,.18);overflow:hidden;opacity:0;transition:opacity .3s}
+.vsl.playing .bar{opacity:1}
+.vsl .bar i{display:block;height:100%;width:0;background:#fff}
+.vsl .ctrl{position:absolute;right:22px;top:22px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;display:none;place-items:center;cursor:pointer}
+.vsl.playing .ctrl{display:grid}
+.vsl .ctrl svg{width:20px;height:20px}
+
+/* pains */
+.pains{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:44px}
+.pain{display:flex;gap:14px;align-items:flex-start;padding:20px 22px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0))}
+.pain .x{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid #5d6068;display:grid;place-items:center;color:#a5a9b0;margin-top:1px}
+.pain .x svg{width:13px;height:13px}
+.pain{text-align:left}.pain p{font-weight:600;color:#dcdee2}
+
+/* turn */
+.turn{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(ellipse 70% 100% at 50% 50%,rgba(255,255,255,.05),transparent 70%)}
+.turn h2{font-size:clamp(2.2rem,5.6vw,4rem)}
+.turn .formula{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:38px;font-weight:900;font-size:clamp(1.05rem,2.4vw,1.4rem);letter-spacing:.06em}
+.turn .formula span{padding:14px 22px;border:1px solid var(--line2);border-radius:14px}
+.turn .formula em{font-style:normal;color:var(--dim);align-self:center}
+.turn .formula span:last-child{background:#fff;color:#08080a;border-color:#fff}
+
+/* stack */
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
+.item{position:relative;padding:28px 26px 26px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden;transition:border-color .2s,transform .2s}
+.item:hover{border-color:#4a4d55;transform:translateY(-3px)}
+.item::before{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent)}
+.item .num{font-size:3.1rem;font-weight:900;line-height:1;letter-spacing:-.03em}
+.item h3{font-size:1.12rem;margin:12px 0 8px;font-weight:800;letter-spacing:-.01em}
+.item p{color:var(--muted);font-size:.95rem}
+.item.big{grid-column:span 2}
+.item .tag{position:absolute;right:18px;top:18px;font-size:.7rem;font-weight:800;letter-spacing:.14em;color:var(--dim)}
+.niches{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.niches span{font-size:.78rem;font-weight:600;color:#c8cbd0;border:1px solid var(--line2);border-radius:999px;padding:4px 10px}
+
+/* walkthrough */
+.walk{display:grid;grid-template-columns:300px 1fr;gap:28px;margin-top:48px;align-items:start}
+.steps{display:flex;flex-direction:column;gap:10px}
+.step{all:unset;cursor:pointer;display:flex;gap:14px;align-items:center;padding:16px 18px;border:1px solid var(--line);border-radius:14px;color:var(--muted);font-weight:700;transition:all .2s}
+.step .n{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--line2);display:grid;place-items:center;font-size:.82rem;font-weight:900;flex:none}
+.step small{display:block;font-weight:500;font-size:.8rem;color:var(--dim)}
+.step.on{background:#fff;color:#08080a;border-color:#fff}
+.step.on .n{background:#08080a;color:#fff;border-color:#08080a}
+.step.on small{color:#4b4e55}
+.step:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.panel{border:1px solid var(--line);border-radius:22px;background:var(--card);overflow:hidden;display:grid;grid-template-columns:1fr 250px}
+.panel .txt{padding:30px 32px}
+.panel .src{font-size:.75rem;font-weight:800;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+.panel h3{font-size:1.5rem;margin:10px 0 16px}
+.panel blockquote{border-left:3px solid #fff;padding:4px 0 4px 18px;color:#e4e6ea;font-size:1.02rem}
+.panel blockquote p+p{margin-top:10px}
+.panel blockquote b{color:#fff}
+.panel .why{margin-top:18px;color:var(--muted);font-size:.93rem}
+.panel .pg{background:#0a0a0c;border-left:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px;cursor:zoom-in}
+.panel .pg img{border-radius:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.8)}
+
+/* gallery */
+.gal{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:46px 22px 18px;margin:0 -22px;scrollbar-width:thin;scrollbar-color:#3a3c42 transparent}
+.gal figure{flex:none;width:250px;scroll-snap-align:center;cursor:zoom-in}
+.gal img{border-radius:8px;box-shadow:0 22px 50px -18px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.06);transition:transform .25s}
+.gal figure:hover img{transform:translateY(-6px) rotate(-.6deg)}
+.gal figcaption{margin-top:12px;font-size:.82rem;font-weight:700;color:var(--muted);text-align:center}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:92vh;width:auto;border-radius:8px}
+
+/* toc */
+.toc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;margin-top:44px;counter-reset:c}
+.toc li{list-style:none;display:flex;gap:18px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-weight:600;color:#dcdee2}
+.toc li b{font-weight:900;color:var(--dim);font-size:.9rem;min-width:24px}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+.fit .col{border:1px solid var(--line);border-radius:22px;padding:30px}
+.fit .col.yes{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border-color:#3c3f46}
+.fit h3{font-size:1.25rem;margin-bottom:18px}
+.fit ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.fit li{display:flex;gap:12px;color:#d6d8dc}
+.fit li svg{flex:none;width:20px;height:20px;margin-top:3px}
+.fit .no li{color:var(--muted)}
+
+/* plan */
+.plan{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:44px}
+.day{border:1px solid var(--line);border-radius:16px;padding:18px 14px;background:var(--card)}
+.day b{display:block;font-size:.72rem;letter-spacing:.16em;color:var(--dim);margin-bottom:8px}
+.day p{font-size:.88rem;color:#d4d6da;line-height:1.45}
+
+/* offer */
+.offer{position:relative;border-radius:30px;padding:3px;background:linear-gradient(135deg,#8f949b,#2a2b30 30%,#16171a 60%,#d4d7dc)}
+.offer-in{border-radius:27px;background:radial-gradient(ellipse 60% 70% at 25% 40%,rgba(255,255,255,.07),transparent 70%),#0c0c0f;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;padding:52px;align-items:center}
+.offer-in>*{min-width:0}
+.offer-in .book{filter:drop-shadow(0 40px 50px rgba(0,0,0,.8));width:min(100%,340px);height:auto;margin:0 auto;animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.offer h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:10px 0 22px}
+.offer ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.offer li{display:flex;gap:12px;font-weight:600;color:#e2e4e8}
+.offer li svg{flex:none;width:20px;height:20px;margin-top:3px}
+.price{margin:0 0 22px}
+.hero-price{margin-top:16px;font-size:1.02rem;color:#c9ccd1}
+.hero-price b{color:#fff;font-weight:900}
+.parc-lbl{font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.avista{color:#d4d6da;font-weight:600;margin-top:6px}
+.avista b{color:#fff;font-weight:900}
+.anchor{margin-top:14px;padding:12px 14px;border:1px dashed #3f4249;border-radius:12px;font-size:.92rem;color:var(--muted)}
+.anchor b{color:#fff}
+.btn-xl{padding:24px 34px;font-size:1.15rem;letter-spacing:.02em}
+.final-price{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:26px}
+.final-price>span{font-size:clamp(2.4rem,6vw,3.4rem);font-weight:900;letter-spacing:-.03em;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+.final-price small{color:var(--muted);font-size:.98rem}
+.final-price b{color:#fff}
+.price .de{color:var(--dim);text-decoration:line-through;font-weight:600}
+.price .por{font-size:3.2rem;font-weight:900;line-height:1.05;letter-spacing:-.03em}
+.price .parc{color:var(--muted);font-weight:600}
+.offer .btn{width:100%}
+.secure{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;font-size:.84rem;color:var(--muted)}
+.secure svg{width:15px;height:15px}
+
+/* guarantee */
+.guar{display:flex;gap:30px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:34px 38px;margin-top:28px;background:var(--card)}
+.seal{flex:none;width:118px;height:118px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--silver);color:#08080a;box-shadow:0 0 0 6px #0c0c0f,0 0 0 7px #3a3c42}
+.seal b{display:block;font-size:2.4rem;font-weight:900;line-height:.9}
+.seal small{font-size:.68rem;font-weight:800;letter-spacing:.12em}
+.guar h3{font-size:1.35rem;margin-bottom:8px}
+.guar p{color:var(--muted)}
+
+/* author */
+.author{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:38px;background:linear-gradient(120deg,rgba(255,255,255,.03),transparent)}
+.author img{width:200px}
+.author p{color:var(--muted);margin-top:10px}
+
+/* faq */
+.faq{max-width:820px;margin:44px auto 0}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:800;font-size:1.06rem;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-10px;border-right:2px solid #c6c9ce;border-bottom:2px solid #c6c9ce;transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:-3px}
+.faq details p{color:var(--muted);padding:0 0 22px}
+
+/* final */
+.final{padding:110px 0 120px;text-align:center;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(255,255,255,.07),transparent 70%)}
+.final h2{font-size:clamp(2.3rem,6vw,4.4rem);margin:16px 0 22px}
+
+footer{border-top:1px solid var(--line);padding:46px 0 120px;color:var(--dim);font-size:.85rem;text-align:center}
+footer img{height:54px;width:auto;margin:0 auto 16px}
+footer p+p{margin-top:8px}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none;transform:translateY(140%);transition:transform .35s ease}
+.sticky.on{transform:none}
+.sticky .btn{width:100%;padding:17px 20px;font-size:1rem}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.btn::after,.offer-in .book,.vsl .sound .ring{animation:none}}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:38px}
+  .hero .copy{text-align:center}
+  .chips{justify-content:center}
+  .hero .lead{margin-left:auto;margin-right:auto}
+  .hero-micro{justify-content:center}
+  .stack{grid-template-columns:1fr 1fr}
+  .walk{grid-template-columns:1fr}
+  .steps{flex-direction:row;overflow-x:auto;padding-bottom:4px}
+  .step{flex:none}
+  .panel{grid-template-columns:1fr}
+  .panel .pg{border-left:0;border-top:1px solid var(--line)}
+  .panel .pg img{max-width:240px}
+  .plan{grid-template-columns:repeat(2,1fr)}
+  .offer-in{grid-template-columns:minmax(0,1fr);padding:34px 24px;text-align:center}
+  .offer ul{text-align:left}
+  .sticky{display:block}
+}
+@media (max-width:960px){
+  .hero .copy{display:contents}
+  .hero-grid{display:flex;flex-direction:column;gap:0;text-align:center}
+  .hero .eyebrow{order:1}.hero h1{order:2;margin-bottom:22px}.hero .vslwrap{order:3;margin-bottom:26px;width:100%}
+  .hero .lead{order:4}.hero .chips{order:5}.hero .copy>.btn{order:6}.hero .hero-price{order:7}.hero .hero-micro{order:8}
+}
+@media (max-width:640px){
+  .btn{font-size:.98rem;padding:19px 22px}
+  .btn-xl{font-size:1rem;padding:20px 22px}
+  .hero .copy>.btn,.final .btn{width:100%}
+  .price .por{font-size:2.5rem;white-space:nowrap}
+  .vsl{width:min(100%,330px)}
+  section{padding:72px 0}
+  .hero{padding:30px 0 60px}
+  .pains,.stack,.toc,.fit{grid-template-columns:1fr}
+  .item.big{grid-column:auto}
+  .turn .formula{flex-direction:column;align-items:center;gap:8px}
+  .turn .formula span{width:100%;max-width:320px}
+  .guar,.author{grid-template-columns:1fr;flex-direction:column;text-align:center;padding:30px 24px}
+  .author img{margin:0 auto}
+  header img{height:32px}
+  .step small{display:none}
+}
+</style>
+</head>
+<body>
+<div class="streaks" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="PERSONAL.PRO — Gestão Fitness Profissional" width="160" height="38">
+    <a class="btn buy" data-checkout href="https://pay.kiwify.com.br/asXmBdT">Comprar agora</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO / VSL -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="copy">
+      <div class="eyebrow">Para personal trainers · Edição Premium</div>
+      <h1><span class="metal">Personal, pare de perder horas pensando no que postar.</span></h1>
+      <p class="lead">O <b>Conteúdo que Atrai</b> reúne ganchos, roteiros, prompts e um calendário pronto para você transformar o que já sabe de treino em conteúdo que gera conversa com futuros alunos.</p>
+      <div class="chips">
+        <span class="chip"><b>300</b> ganchos</span>
+        <span class="chip"><b>60</b> roteiros para Reels</span>
+        <span class="chip"><b>100</b> prompts visuais</span>
+        <span class="chip">Calendário de <b>30 dias</b></span>
+      </div>
+      <a class="btn buy" data-checkout href="https://pay.kiwify.com.br/asXmBdT">QUERO MEU ACESSO AGORA
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="hero-price">Por apenas <b data-parc>12x de R$ 5,16</b> ou <b data-preco>R$ 49,90</b> à vista</div>
+      <div class="micro hero-micro">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Acesso imediato</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>PDF de 75 páginas</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Compra segura</span>
+      </div>
+    </div>
+    <div class="vslwrap">
+      <div class="vsl" id="vsl">
+        <video id="vid" src="assets/vsl.mp4" poster="assets/vsl-poster.jpg" muted autoplay loop playsinline preload="metadata"></video>
+        <button class="sound" id="sound" aria-label="Assistir o vídeo com som">
+          <span class="ring"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <strong>Clique para assistir com som</strong>
+          <small>Vídeo de 57 segundos</small>
+        </button>
+        <button class="ctrl" id="ctrl" aria-label="Pausar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
+        <div class="bar"><i id="prog"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOR -->
+<section>
+  <div class="wrap center rv">
+    <div class="eyebrow">Você se reconhece aqui?</div>
+    <h2 style="margin-top:14px">Você sabe treinar.<br><span class="metal">O Instagram é que não anda.</span></h2>
+    <div class="pains">
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Abre o Instagram e não sabe o que publicar hoje.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Grava Reels que ninguém assiste até o final.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Publica com frequência, mas não aparecem novos alunos.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Não sabe criar a primeira frase que prende a atenção.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Trava na hora de escrever uma legenda profissional.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Não consegue traduzir conhecimento técnico em algo interessante.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Começa do zero toda semana, sem planejamento.</p></div>
+      <div class="pain"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 6l12 12M18 6 6 18"/></svg></span><p>Perde horas que poderiam estar indo para os seus alunos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIRADA -->
+<section class="turn">
+  <div class="wrap center rv">
+    <div class="eyebrow">O problema não é falta de conhecimento</div>
+    <h2 style="margin-top:16px"><span class="metal">Você entende de treino.</span><br>Falta um método para <span class="hl">comunicar</span>.</h2>
+    <p class="lead" style="margin-top:22px">Biomecânica, periodização e avaliação você já domina. O que separa o seu conhecimento de um perfil que atrai alunos é saber escolher o tema, abrir com um bom gancho, gravar com roteiro e fechar com uma chamada clara. É isso que este livro organiza para você.</p>
+    <div class="formula"><span>CONHECIMENTO</span><em>+</em><span>ESTRATÉGIA</span><em>=</em><span>CONTEÚDO QUE ATRAI</span></div>
+  </div>
+</section>
+
+<!-- O QUE VOCÊ RECEBE -->
+<section id="conteudo">
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow">O que você recebe</div>
+      <h2 style="margin-top:14px">Tudo o que você precisa para <span class="metal">postar com direção</span></h2>
+      <p class="lead" style="margin-top:16px">75 páginas organizadas para você parar de improvisar e começar a produzir.</p>
+    </div>
+    <div class="stack">
+      <div class="item big rv"><span class="tag">CAP. 03</span><div class="num metal">300</div><h3>Ganchos organizados por nicho</h3><p>A primeira frase do seu Reel ou o texto na tela, prontos para adaptar ao seu público. São 30 ganchos em cada um dos 10 nichos:</p>
+        <div class="niches"><span>Treino feminino e composição corporal</span><span>Glúteos e membros inferiores</span><span>Cardio e condicionamento</span><span>Técnica, mobilidade e amplitude</span><span>Emagrecimento e hábitos</span><span>Treino natural</span><span>Avaliação e consultoria</span><span>Mitos e opiniões</span><span>Marketing e posicionamento</span><span>Vendas e consultoria online</span></div></div>
+      <div class="item rv"><span class="tag">CAP. 04</span><div class="num metal">60</div><h3>Roteiros completos para Reels</h3><p>Cada roteiro traz gancho, cenas, fala sugerida, texto na tela e CTA. É só gravar.</p></div>
+      <div class="item rv"><span class="tag">CAP. 05</span><div class="num metal">100</div><h3>Prompts visuais</h3><p>Para capas, fundos de Reels, carrosséis, anatomia ilustrativa e fotografia fitness com IA.</p></div>
+      <div class="item rv"><span class="tag">CAP. 06</span><div class="num metal">25</div><h3>Prompts mestres de criação</h3><p>Para legendas, Reels, carrosséis, Stories, bio, anúncios e reaproveitamento de conteúdo.</p></div>
+      <div class="item rv"><span class="tag">CAP. 10</span><div class="num metal">30</div><h3>Dias de calendário editorial</h3><p>Tema, formato, objetivo e CTA de cada dia. Você abre e sabe o que postar.</p></div>
+      <div class="item rv"><span class="tag">CAP. 08</span><div class="num metal">MAPA</div><h3>MAPA CTR</h3><p>A estrutura para criar conteúdo que abre conversas, com exemplo, mensagens de entrega e um prompt pronto.</p></div>
+      <div class="item rv"><span class="tag">CAP. 09</span><div class="num metal">CAV</div><h3>Social Selling: CAV e SPIN</h3><p>Como conduzir a conversa no Direct até a consultoria, com perguntas prontas e sem parecer insistente.</p></div>
+      <div class="item rv"><span class="tag">CAP. 07</span><div class="num metal">HQ</div><h3>Carrossel HQ, Stories e comunidade</h3><p>A narrativa visual em 7 a 8 páginas, sequências de Stories e formatos que geram participação.</p></div>
+      <div class="item rv"><span class="tag">CAP. 12</span><div class="num metal">+</div><h3>Biblioteca extra</h3><p>Prompts para bio, ofertas, anúncios, lives e reaproveitamento do que você já publicou.</p></div>
+      <div class="item big rv"><span class="tag">CAP. 13</span><div class="num metal">7</div><h3>Plano de execução de 7 dias</h3><p>Do posicionamento ao primeiro Reel publicado, com checklist final antes de postar.</p></div>
+    </div>
+    <div class="center" style="margin-top:44px"><a class="btn buy" data-checkout href="https://pay.kiwify.com.br/asXmBdT">QUERO O MEU POR R$ 49,90
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- DO GANCHO AO POST -->
+<section style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow">Veja como funciona na prática</div>
+      <h2 style="margin-top:14px">Do gancho ao post, <span class="metal">sem começar do zero</span></h2>
+      <p class="lead" style="margin-top:16px">Um exemplo real, com trechos tirados do livro. É um único tema, a evolução além da balança, levado da primeira frase até o calendário.</p>
+    </div>
+    <div class="walk rv">
+      <div class="steps" role="tablist">
+        <button class="step on" data-i="0" role="tab"><span class="n">1</span><span>Gancho<small>Prende a atenção</small></span></button>
+        <button class="step" data-i="1" role="tab"><span class="n">2</span><span>Roteiro<small>O que gravar e falar</small></span></button>
+        <button class="step" data-i="2" role="tab"><span class="n">3</span><span>Capa<small>Prompt visual</small></span></button>
+        <button class="step" data-i="3" role="tab"><span class="n">4</span><span>Legenda<small>Prompt mestre</small></span></button>
+        <button class="step" data-i="4" role="tab"><span class="n">5</span><span>Calendário<small>Quando postar</small></span></button>
+      </div>
+      <div class="panel" id="panel">
+        <div class="txt">
+          <div class="src" id="p-src"></div>
+          <h3 id="p-title"></h3>
+          <blockquote id="p-quote"></blockquote>
+          <p class="why" id="p-why"></p>
+        </div>
+        <div class="pg" id="p-pgwrap"><img id="p-img" alt="" width="220" height="311"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR DENTRO -->
+<section>
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow">Por dentro do livro</div>
+      <h2 style="margin-top:14px">Páginas reais, <span class="metal">sem enrolação</span></h2>
+      <p class="lead" style="margin-top:16px">Toque em uma página para ampliar.</p>
+    </div>
+    <div class="gal" id="gal">
+      <figure><img loading="lazy" src="assets/capa.webp" width="250" height="354" alt="Capa"><figcaption>Capa · Edição Premium</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-02.webp" width="250" height="354" alt="O que você recebe"><figcaption>O que você recebe</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-03.webp" width="250" height="354" alt="Sumário"><figcaption>Sumário</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-08.webp" width="250" height="354" alt="300 ganchos"><figcaption>300 ganchos</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-19.webp" width="250" height="354" alt="60 roteiros"><figcaption>60 roteiros</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-34.webp" width="250" height="354" alt="100 prompts visuais"><figcaption>100 prompts visuais</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-53.webp" width="250" height="354" alt="Prompts mestres"><figcaption>Prompts mestres</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-59.webp" width="250" height="354" alt="Carrossel HQ e Stories"><figcaption>Carrossel HQ e Stories</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-61.webp" width="250" height="354" alt="MAPA CTR"><figcaption>MAPA CTR</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-63.webp" width="250" height="354" alt="Social Selling"><figcaption>Social Selling: CAV e SPIN</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-65.webp" width="250" height="354" alt="Calendário de 30 dias"><figcaption>Calendário de 30 dias</figcaption></figure>
+      <figure><img loading="lazy" src="assets/pag-73.webp" width="250" height="354" alt="Plano de execução"><figcaption>Plano de 7 dias</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SUMÁRIO -->
+<section style="padding-top:20px">
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">Sumário</div>
+      <h2 style="margin-top:14px">13 capítulos, <span class="metal">do posicionamento à venda</span></h2>
+    </div>
+    <ol class="toc">
+      <li><b>01</b>Fundamentos: conteúdo que atrai, educa e converte</li>
+      <li><b>02</b>Posicionamento, público e pilares editoriais</li>
+      <li><b>03</b>Os 300 ganchos organizados por nicho</li>
+      <li><b>04</b>Os 60 roteiros completos para Reels</li>
+      <li><b>05</b>Os 100 prompts de imagens, capas e direção visual</li>
+      <li><b>06</b>Prompts mestres: Reels, legendas e carrosséis</li>
+      <li><b>07</b>Carrossel HQ, Stories e formatos de comunidade</li>
+      <li><b>08</b>MAPA CTR: conteúdo que abre conversas</li>
+      <li><b>09</b>Social Selling: CAV, SPIN e conversão no Direct</li>
+      <li><b>10</b>Calendário editorial de 30 dias</li>
+      <li><b>11</b>Produção, edição, distribuição e métricas</li>
+      <li><b>12</b>Biblioteca extra: bio, ofertas, anúncios e reaproveitamento</li>
+      <li><b>13</b>Plano de execução e encerramento</li>
+    </ol>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section style="padding-top:40px">
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">Para quem é</div>
+      <h2 style="margin-top:14px">Feito para quem <span class="metal">vive de treino</span></h2>
+    </div>
+    <div class="fit">
+      <div class="col yes">
+        <h3>É para você que</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>É personal trainer, profissional de educação física, treinador ou consultor fitness</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Atende presencialmente, online ou nos dois formatos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Quer usar o Instagram para conquistar alunos, não só para postar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Prefere ter um método e um calendário a improvisar todo dia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Valoriza conteúdo ético, técnico e sem promessas milagrosas</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h3>Não é para você se</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6d7079" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Procura uma fórmula para viralizar sem esforço</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6d7079" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Quer copiar e colar sem adaptar ao seu público</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6d7079" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Não pretende gravar nem publicar nada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#6d7079" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Espera garantia de número de seguidores ou de clientes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANO 7 DIAS -->
+<section style="padding-top:40px">
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">Capítulo 13</div>
+      <h2 style="margin-top:14px">Sua primeira semana <span class="metal">já vem planejada</span></h2>
+      <p class="lead" style="margin-top:16px">O livro termina com um plano de 7 dias para você sair da leitura e chegar ao primeiro post.</p>
+    </div>
+    <div class="plan">
+      <div class="day"><b>DIA 1</b><p>Defina público, posicionamento e três pilares.</p></div>
+      <div class="day"><b>DIA 2</b><p>Escolha 10 ganchos e selecione 3 roteiros.</p></div>
+      <div class="day"><b>DIA 3</b><p>Grave os 3 Reels e as cenas de apoio.</p></div>
+      <div class="day"><b>DIA 4</b><p>Prepare capas e legendas e revise afirmações técnicas.</p></div>
+      <div class="day"><b>DIA 5</b><p>Publique um Reel e um carrossel e responda os comentários.</p></div>
+      <div class="day"><b>DIA 6</b><p>Use os Stories para ouvir dúvidas e iniciar conversas.</p></div>
+      <div class="day"><b>DIA 7</b><p>Analise as métricas e planeje a próxima semana.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="offer rv">
+      <div class="offer-in">
+        <img class="book" src="assets/livro-3d.webp" alt="Livro Conteúdo que Atrai — Edição Premium" width="340" height="490">
+        <div>
+          <div class="eyebrow">Conteúdo que Atrai · Edição Premium</div>
+          <h2><span class="metal">Tenha o seu método de conteúdo hoje</span></h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>300 ganchos organizados em 10 nichos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>60 roteiros completos para Reels</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>100 prompts visuais e 25 prompts mestres</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Calendário editorial de 30 dias</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>MAPA CTR, CAV e SPIN Selling para o Direct</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Carrossel HQ, Stories, bio, anúncios e plano de 7 dias</li>
+          </ul>
+          <div class="price" id="price" hidden>
+            <div class="de" id="price-de"></div>
+            <div class="parc-lbl">Tudo isso por apenas</div>
+            <div class="por metal" id="price-parc"></div>
+            <div class="avista">ou <b id="price-por"></b> à vista</div>
+            <div class="anchor">Menos de <b>17 centavos por gancho</b>, e você ainda leva os 60 roteiros, os 125 prompts e o calendário.</div>
+          </div>
+          <a class="btn buy btn-xl" data-checkout href="https://pay.kiwify.com.br/asXmBdT">SIM, QUERO O CONTEÚDO QUE ATRAI
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Pagamento processado com segurança pela Kiwify · Acesso imediato</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="guar rv" id="garantia">
+      <div class="seal"><div><b id="g-days">7</b><small>DIAS DE<br>GARANTIA</small></div></div>
+      <div>
+        <h3>Risco zero para você</h3>
+        <p>Leia, aplique e veja se o material faz sentido para o seu trabalho. Se dentro de <span id="g-days2">7</span> dias você decidir que não é para você, solicite o reembolso pela Kiwify e receba 100% do valor de volta, sem burocracia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOR -->
+<section style="padding-top:20px">
+  <div class="wrap rv">
+    <div class="author">
+      <img src="assets/logo.webp" alt="PERSONAL.PRO" width="200" height="120" loading="lazy">
+      <div>
+        <div class="eyebrow">Quem está por trás</div>
+        <h3 style="font-size:1.6rem;margin-top:10px" id="autor-nome">PERSONAL.PRO — Gestão Fitness Profissional</h3>
+        <p id="autor-bio">A PERSONAL.PRO desenvolve ferramentas e materiais para personal trainers que querem profissionalizar a gestão, o atendimento e a comunicação. O Conteúdo que Atrai foi criado por Jônatas Emanuel para ajudar profissionais do treino a mostrar com clareza o valor do que já fazem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">Dúvidas frequentes</div>
+      <h2 style="margin-top:14px">Antes de você <span class="metal">decidir</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>O livro é físico ou digital?</summary><p>É digital: um e-book em PDF com 75 páginas, que você pode ler no celular, no tablet ou no computador e consultar sempre que for planejar ou gravar.</p></details>
+      <details><summary>Como recebo o acesso?</summary><p>Logo depois da confirmação do pagamento, a Kiwify envia o acesso para o e-mail que você informou na compra. No cartão e no Pix a liberação costuma ser imediata.</p></details>
+      <details><summary>Serve para quem está começando no Instagram?</summary><p>Sim. O livro começa pelos fundamentos e pelo posicionamento e termina com um plano de 7 dias para publicar o primeiro conteúdo. Quem já posta usa os ganchos, roteiros e o calendário para ganhar consistência e direção.</p></details>
+      <details><summary>Funciona para o meu nicho?</summary><p>Os 300 ganchos estão divididos em 10 nichos: treino feminino, glúteos e membros inferiores, cardio, técnica e mobilidade, emagrecimento e hábitos, treino natural, avaliação e consultoria, mitos, marketing e vendas. Os roteiros e prompts têm campos para você adaptar ao seu público.</p></details>
+      <details><summary>Preciso saber usar inteligência artificial?</summary><p>Não. Os ganchos, roteiros e o calendário funcionam sem IA nenhuma. Os prompts são um recurso a mais: é só copiar, preencher os campos entre colchetes e colar no gerador de texto ou de imagem que você preferir.</p></details>
+      <details><summary>Posso só copiar os ganchos e roteiros?</summary><p>Eles foram feitos para servir de ponto de partida. O próprio livro orienta a adaptar as palavras ao seu público, contextualizar e revisar a precisão técnica antes de publicar. É isso que torna o conteúdo seu.</p></details>
+      <details><summary>O livro garante que vou conseguir clientes?</summary><p>Não, e ninguém sério deveria prometer isso. O livro dá método, ideias e estruturas prontas para você produzir com mais direção e profissionalismo. Os resultados dependem da sua aplicação, do seu atendimento e do seu mercado.</p></details>
+      <details><summary>Quanto custa e como pago?</summary><p>R$ 49,90 à vista ou em até 12x de R$ 5,16 no cartão, pelo checkout seguro da Kiwify. Lá aparecem todas as formas de pagamento disponíveis.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem <span class="g-days3">7</span> dias de garantia. Se decidir que o material não é para você, peça o reembolso pela Kiwify dentro desse prazo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap rv">
+    <div class="eyebrow">Seu conhecimento merece ser visto</div>
+    <h2><span class="metal">Chega de ficar<br>sem ideias.</span></h2>
+    <p class="lead" style="margin:0 auto 26px">Na próxima vez que você abrir o Instagram, já vai saber o que postar, como começar e o que pedir no final.</p>
+    <div class="final-price"><span data-parc>12x de R$ 5,16</span><small>ou <b data-preco>R$ 49,90</b> à vista · garantia de <span class="g-days3">7</span> dias</small></div>
+    <a class="btn buy btn-xl" data-checkout href="https://pay.kiwify.com.br/asXmBdT">GARANTIR MEU ACESSO AGORA
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="micro"><span>Acesso imediato</span><span>·</span><span>PDF de 75 páginas</span><span>·</span><span><span class="g-days3">7</span> dias de garantia</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="PERSONAL.PRO" width="90" height="54" loading="lazy">
+    <p>PERSONAL.PRO · Gestão Fitness Profissional</p>
+    <p>Conteúdo que Atrai — Edição Premium é um material educacional. Os resultados variam conforme a aplicação de cada profissional. Este site não é afiliado ao Instagram nem à Meta.</p>
+    <p>© <span id="yr">2026</span> PERSONAL.PRO. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn buy" data-checkout href="https://pay.kiwify.com.br/asXmBdT">QUERO O MEU · <span data-parc>12x de R$ 5,16</span></a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Página ampliada"><img id="lb-img" alt=""></div>
+
+<script>
+/* ===================== CONFIGURAÇÃO — EDITE AQUI ===================== */
+const CONFIG = {
+  checkout: 'https://pay.kiwify.com.br/asXmBdT',
+  preco: 'R$ 49,90',       // preço à vista
+  parcelas: '12x de R$ 5,16', // parcelamento (aparece em destaque)
+  precoDe: '',             // opcional, ex.: 'De R$ 97,00'
+  garantiaDias: 7,
+  pixelMeta: ''       // ex.: '123456789012345' (só funciona com o site hospedado no seu domínio)
+};
+/* ===================================================================== */
+
+(function(){
+  // Every "buy" button that isn't an anchor-jump goes to the checkout, carrying UTM/ad params.
+  const qs = location.search;
+  document.querySelectorAll('[data-checkout]').forEach(a=>{
+    let url = CONFIG.checkout;
+    if (qs && qs.length > 1) url += (url.includes('?') ? '&' : '?') + qs.slice(1);
+    a.href = url; a.target = '_blank'; a.rel = 'noopener';
+    a.addEventListener('click',()=>{ try{ window.fbq && fbq('track','InitiateCheckout'); }catch(e){} });
+  });
+
+  // Price block
+  if (CONFIG.preco){
+    document.getElementById('price').hidden = false;
+    document.getElementById('price-por').textContent = CONFIG.preco;
+    document.getElementById('price-de').textContent = CONFIG.precoDe;
+    document.getElementById('price-parc').textContent = CONFIG.parcelas || CONFIG.preco;
+    document.querySelectorAll('[data-preco]').forEach(e=>e.textContent = CONFIG.preco);
+    document.querySelectorAll('[data-parc]').forEach(e=>e.textContent = CONFIG.parcelas || CONFIG.preco);
+  }
+  document.querySelectorAll('#g-days,#g-days2,.g-days3').forEach(e=>e.textContent = CONFIG.garantiaDias);
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Meta Pixel (optional)
+  if (CONFIG.pixelMeta){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.pixelMeta); fbq('track','PageView'); fbq('track','ViewContent');
+  }
+
+  // VSL
+  const box = document.getElementById('vsl'), vid = document.getElementById('vid'),
+        snd = document.getElementById('sound'), ctrl = document.getElementById('ctrl'), prog = document.getElementById('prog');
+  const pauseIco = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>',
+        playIco = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>';
+  snd.addEventListener('click', ()=>{
+    vid.currentTime = 0; vid.muted = false; vid.loop = false;
+    const p = vid.play(); if (p && p.catch) p.catch(()=>{});
+    snd.style.display = 'none'; box.classList.add('playing');
+  });
+  ctrl.addEventListener('click', ()=>{
+    if (vid.paused){ vid.play(); ctrl.innerHTML = pauseIco; ctrl.setAttribute('aria-label','Pausar'); }
+    else { vid.pause(); ctrl.innerHTML = playIco; ctrl.setAttribute('aria-label','Continuar'); }
+  });
+  vid.addEventListener('timeupdate', ()=>{ if (vid.duration) prog.style.width = (vid.currentTime/vid.duration*100)+'%'; });
+  vid.addEventListener('ended', ()=>{ ctrl.innerHTML = playIco; document.getElementById('oferta').scrollIntoView({behavior:'smooth'}); });
+
+  // Walkthrough (trechos reais do livro)
+  const STEPS = [
+    {src:'Capítulo 03 · Gancho 04 · Página 8', title:'Comece pela frase que faz parar a rolagem',
+     quote:'<p><b>“Não avalie sua evolução usando apenas o número da balança.”</b></p>',
+     why:'Um dos 30 ganchos do nicho Treino feminino e composição corporal. Use como primeira frase falada ou como texto na tela.', img:'assets/pag-08.webp'},
+    {src:'Capítulo 04 · Roteiro 02 · Página 19', title:'Grave com roteiro, não no improviso',
+     quote:'<p><b>Gancho / texto na tela:</b> A balança não conta a história inteira da sua evolução.</p><p><b>Cenas:</b> Mostre balança, registro de carga e fita métrica.</p><p><b>Fala sugerida:</b> Explique que peso oscila e deve ser interpretado junto de medidas, desempenho, fotos autorizadas e contexto.</p><p><b>CTA:</b> Salve para lembrar de acompanhar mais de um indicador.</p>',
+     why:'O roteiro do mesmo tema já diz o que mostrar, o que falar e como fechar.', img:'assets/pag-19.webp'},
+    {src:'Capítulo 05 · Prompt 061 · Página 45', title:'Gere a capa ou a imagem de apoio',
+     quote:'<p>Crie [FORMATO: 9:16 / 4:5 / 1:1] para conteúdo de personal trainer. <b>Cena: flat lay de prancheta, caneta, fita métrica e tablet em mesa profissional.</b> Estilo: fotografia editorial fitness realista…</p>',
+     why:'São 100 prompts como este, com direção de arte, paleta e espaço reservado para o título.', img:'assets/pag-45.webp'},
+    {src:'Capítulo 06 · Prompt 05 · Página 54', title:'Escreva a legenda com estrutura',
+     quote:'<p><b>Legenda longa e educativa:</b> Escreva uma legenda aprofundada sobre [TEMA] para [PÚBLICO]. Abertura forte, contexto, explicação técnica em linguagem simples, exemplo prático, limite/individualização, CTA para [AÇÃO] e 5 hashtags relevantes.</p>',
+     why:'Um dos 25 prompts mestres. É só preencher os colchetes com o tema do roteiro.', img:'assets/pag-54.webp'},
+    {src:'Capítulo 10 · Calendário · Página 65', title:'Encaixe no calendário e siga em frente',
+     quote:'<p><b>DIA 01 · Reel:</b> O erro de avaliar treino apenas pelo cansaço. Objetivo: Descoberta. CTA: Salve para revisar seu treino.</p><p><b>DIA 02 · Carrossel:</b> 5 pontos para revisar seu treino de pernas. Objetivo: Salvamento.</p><p><b>DIA 03 · Reel:</b> Elevação pélvica x agachamento: funções diferentes. Objetivo: Autoridade.</p>',
+     why:'São 30 dias com tema, formato, objetivo e CTA. Você nunca mais abre o Instagram sem saber o que postar.', img:'assets/pag-65.webp'}
+  ];
+  const btns = document.querySelectorAll('.step');
+  function show(i){
+    const s = STEPS[i];
+    btns.forEach((b,k)=>{ b.classList.toggle('on', k===i); b.setAttribute('aria-selected', k===i); });
+    document.getElementById('p-src').textContent = s.src;
+    document.getElementById('p-title').textContent = s.title;
+    document.getElementById('p-quote').innerHTML = s.quote;
+    document.getElementById('p-why').textContent = s.why;
+    const im = document.getElementById('p-img'); im.src = s.img; im.alt = s.src;
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i)));
+  show(0);
+
+  // Lightbox
+  const lb = document.getElementById('lb'), lbi = document.getElementById('lb-img');
+  function openLb(src, alt){ lbi.src = src; lbi.alt = alt || ''; lb.classList.add('on'); }
+  document.querySelectorAll('#gal img').forEach(i=>i.addEventListener('click',()=>openLb(i.src,i.alt)));
+  document.getElementById('p-pgwrap').addEventListener('click',()=>openLb(document.getElementById('p-img').src));
+  lb.addEventListener('click',()=>lb.classList.remove('on'));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('on'); });
+
+  // Reveal on scroll
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }),{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  } else document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+
+  // Sticky CTA (mobile) after hero, hidden over the offer
+  const sticky = document.getElementById('sticky'), hero = document.querySelector('.hero'), offer = document.getElementById('oferta');
+  function onScroll(){
+    const past = hero.getBoundingClientRect().bottom < 0;
+    const r = offer.getBoundingClientRect(); const atOffer = r.top < innerHeight && r.bottom > 0;
+    sticky.classList.toggle('on', past && !atOffer);
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>
