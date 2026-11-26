@@ -639,7 +639,7 @@ const CONFIG = {
     let url = CONFIG.checkout;
     if (qs && qs.length > 1) url += (url.includes('?') ? '&' : '?') + qs.slice(1);
     a.href = url; a.target = '_blank'; a.rel = 'noopener';
-    a.addEventListener('click',()=>{ try{ window.fbq && fbq('track','InitiateCheckout'); }catch(e){} });
+    a.addEventListener('click',()=>{ try{ window.fbq && fbq('trackCustom','CliqueComprar'); }catch(e){} });
   });
 
   // Price block
